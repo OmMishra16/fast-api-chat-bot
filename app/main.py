@@ -7,7 +7,10 @@ app = FastAPI(title="Chatbot API", version="1.0.0")
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*", "https://fast-api-chat-bot-frontend.vercel.app", "https://fast-api-chat-bot-frontend-j5nwl9vu6.vercel.app", "http://localhost:5173"],
+    allow_origins=["*",
+        "https://chat.buildmynotes.com",
+        "http://localhost:5173"  
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
